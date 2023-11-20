@@ -1,0 +1,17 @@
+<div class="main-container">
+  <mat-card class="login-card">
+    <h2> <p>Login</p></h2>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Ex. ravindra@gmail.com" required="" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Ex. @34$%&90#qwe" required="" />
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="primary">Login</button>
+    <div class="bottom-text">
+        I don't have any account <a [routerLink]="['../signup']">Signup </a>
+    </div>
+  </mat-card>
+</div>
