@@ -139,18 +139,17 @@
           <td>
             @if (student.totalmarks >= 450) {
             <strong class="text-success">Excelent</strong>
-            } @else if(student.totalmarks <= 450 && student.totalmarks >= 400){
+            } @else if(student.totalmarks <= 450 && student.totalmarks>= 400){
             <strong class="text-primary">Very Good</strong>
             } @else {
             <strong class="text-warning">Needs to improvement</strong>
             }
           </td>
         </tr>
-        }
-        @empty{
-            <tr class="text-center">
-                <td colspan="5">No recoreds found!!</td>
-            </tr>
+        } @empty{
+        <tr class="text-center">
+          <td colspan="5">No recoreds found!!</td>
+        </tr>
         }
       </tbody>
     </table>

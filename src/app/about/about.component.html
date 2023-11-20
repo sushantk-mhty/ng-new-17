@@ -1,3 +1,35 @@
-<div class="main-container">
+<!-- <div class="main-container">
     <h1>About Component</h1>
-</div>
+</div> -->
+<section class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow-lg">
+          <div class="card-header">Check Eligibility vote</div>
+          <div class="card-body">
+            <label for="">Enter the age : </label>
+            <input
+              type="number"
+              name="age"
+              class="form-control"
+              (input)="checkEligibility()"
+              [(ngModel)]="age"
+              min="0"
+              max="60"
+            />
+            <!-- <ng-container [ngSwitch]="isEligibile">
+              <p *ngSwitchCase="true">You are eligible to vote!</p>
+              <p *ngSwitchDefault>You are not eligible to vote !!</p>
+            </ng-container> -->
+            @switch (isEligibile) { @case (true) {
+            <p>You are eligible to vote!</p>
+            } @default {
+            <p>You are not eligible to vote !!</p>
+            } }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
